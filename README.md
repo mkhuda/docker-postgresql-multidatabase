@@ -1,6 +1,6 @@
 # Docker Multiple Database for PostgreSQL
 
-Based on Postgresql 9.5 (Can be used to any versions).
+Based on Postgresql 9.5 (Can be used to any versions) with Persistent Data.
 
 ## Usage
 
