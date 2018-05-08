@@ -3,6 +3,11 @@
 Based on Postgresql 9.5 (Can be used to any versions) with Persistent Data.
 
 ## Usage
+- Stop your current postgresql default system (If you have installed postgresql on PORT 5432):
+```
+$ sudo service postgresql stop
+```
+- Build the Dockerfile and compose it!
 
 ```
 $ docker build -t postgres_multi .
@@ -11,7 +16,7 @@ $ docker-compose up -d
 
 It will create 3 database for you `prod_db`, `dev_db`, and `test_db` within `postgres` User.
 
-In order to test psql, you can stop postgresql system by `sudo service postgresql stop` that uses PORT 5432.
+In order to test `psql` command, you can stop postgresql system by `sudo service postgresql stop` that uses PORT 5432.
 
 And then:
 > Show created database
