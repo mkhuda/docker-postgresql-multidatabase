@@ -19,6 +19,21 @@ And then:
 ```
 $ psql -h localhost -p 5432 -U postgres
 $ \l
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-----------+----------+----------+------------+------------+-----------------------
+ dev_db    | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =Tc/postgres         +
+           |          |          |            |            | postgres=CTc/postgres
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ prod_db   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =Tc/postgres         +
+           |          |          |            |            | postgres=CTc/postgres
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ test_db   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =Tc/postgres         +
+           |          |          |            |            | postgres=CTc/postgres
+(6 rows)
 ```
 
 > Use psql -d (database) option
