@@ -18,7 +18,10 @@ And then:
 
 ```
 $ psql -h localhost -p 5432 -U postgres
-$ \l
+Password for user postgres: 
+psql (9.5.5, server 9.5.12)
+Type "help" for help.
+postgres=# \l
                                  List of databases
    Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
 -----------+----------+----------+------------+------------+-----------------------
@@ -34,6 +37,7 @@ $ \l
  test_db   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =Tc/postgres         +
            |          |          |            |            | postgres=CTc/postgres
 (6 rows)
+postgres=# \q
 ```
 
 > Use psql -d (database) option
@@ -41,10 +45,9 @@ $ \l
 > Show database table
 ```
 $ psql -h localhost -p 5432 -U postgres -d prod_db
-$ \l
 ```
 
-> Use docker exec, See container ID before by docker ps command
+> Use docker exec, See container ID before by 'docker ps' command
 
 ```
 $ docker ps
